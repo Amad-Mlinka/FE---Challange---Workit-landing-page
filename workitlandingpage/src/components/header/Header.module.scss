@@ -1,0 +1,26 @@
+.header{
+    background-color:var(--primary-color);
+    border-bottom-right-radius: 100% 15%;
+    border-bottom-left-radius: 100% 15%;
+    margin-bottom: 170px;
+}
+.Heading{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingText{
+    color: white; 
+    text-align: center;
+}
+.headingImageContainer{
+    height: 150px;
+}
+.headingImage{
+    width: 330px;
+    position: relative;
+    top: 70px;
+}

@@ -1,0 +1,30 @@
+.headingText{
+    font-family: var(--heading-font);
+    font-weight: 600;
+    &.l{
+        font-size: 45px;
+        line-height: 50px;    
+    }
+    &.m{
+        font-size: 30px;
+        line-height: 64px;
+    }
+    &.s{
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+.bodyText{
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: rgb(68, 255, 161);
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+  }
