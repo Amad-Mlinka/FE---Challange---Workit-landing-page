@@ -1,0 +1,22 @@
+    @import '../../../sass/variables';
+
+    .primary{
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: 1px solid $secondary-color;
+        padding: 10px 30px;
+        font-weight: 600;
+        height: 60px;
+        &:hover{
+            background: none;
+            color: $secondary-color;
+        }
+    }
+    .secondary{
+        background: none;
+        border: none;
+        color: white;
+        &:hover{
+            color: $secondary-color;
+        }
+    }
