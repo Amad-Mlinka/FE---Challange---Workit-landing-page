@@ -1,26 +1,28 @@
-.header{
-    background-color:var(--primary-color);
-    border-bottom-right-radius: 100% 15%;
-    border-bottom-left-radius: 100% 15%;
-    margin-bottom: 170px;
-}
-.Heading{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@import '../../sass/variables';
+@import '../../sass/breakpoints';
+
+
+
+.heroImgContainer{
+    position: relative;
+    height: 10vw;
+
+    .heroImg{
+        position: absolute;
+        width: 80vw;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        z-index: 3;
+        @include tablet{
+            width: 60vw; 
+        }
+        @include desktop{
+            width: 40vw; 
+        }
+    }
 }
 
-.headingText{
-    color: white; 
-    text-align: center;
-}
-.headingImageContainer{
-    height: 150px;
-}
-.headingImage{
-    width: 330px;
-    position: relative;
-    top: 70px;
-}
+
+  
+
+  

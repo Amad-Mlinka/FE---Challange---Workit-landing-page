@@ -1,22 +1,28 @@
 /*React imports */
 
 /*Custom imports */
-import Header from './components/header/Header'
-import FeatureList from './components/features/FeatureList';
+import Header from './components/header/Header';
+import Points from './components/points/Points';
+import RoundedSection from './components/UI/roundedSection/RoundedSection';
+import Testimony from './components/testimony/Testimony';
+
 /*CSS imports */
 import './App.scss';
-import './variables.scss'
-import Statements from './components/statements/Statements';
 import Footer from './components/footer/Footer';
+
 /*Assets imports */
 
 
 const App = () => {
   return (
     <div className="App">
-      <Header/>
-      <FeatureList/>
-      <Statements/>
+      <RoundedSection type="primary" firstSection = {true}>
+        <Header/>
+      </RoundedSection>
+      <RoundedSection type="tertiary" >
+        <Points/>
+      </RoundedSection>
+      <Testimony/>
       <Footer/>
     </div>
   );

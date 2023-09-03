@@ -1,25 +1,20 @@
 /*React imports */
 
 /*Custom imports */
-
+import Button from '../../UI/button/Button'
 /*CSS imports */
 import classes from './Navbar.module.scss'
-import globals from '../../../global.module.scss'
 /*Assets imports */
 import lightLogo from '../../../assets/images/logo-light.svg'
 
 const Navbar = () => {
     return(
-        <div className={classes.navbar}>
-            <div className={`${classes.navbarItem}`}>
-                <img src={lightLogo} alt="workit logo" />
-            </div>
-            <div className={`${globals.underline} ${globals.bodyText} ${classes.navbarItem} underline`}>
-                Apply for Access
-            </div>
+        <div className={classes.navbarContainer}>
+            <img src={lightLogo} alt="" />
+            <Button btnType="button" btnStyle="secondary" btnText="Apply for access"/>
         </div>
     )
 }
 
 
-export default Navbar;
+export default Navbar

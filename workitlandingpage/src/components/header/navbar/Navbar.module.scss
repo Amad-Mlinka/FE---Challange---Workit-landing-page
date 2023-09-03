@@ -1,12 +1,8 @@
-.navbar{
-    width: 100%;
+.navbarContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-inline: 7%;
+    padding-top: 70px;
+    margin-bottom: 50px;
 }
-
-.navbarItem{
-    margin: 40px 7% 20px 7%;
-    color: white;
-}
-

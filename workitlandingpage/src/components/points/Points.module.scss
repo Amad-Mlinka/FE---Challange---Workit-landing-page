@@ -1,0 +1,15 @@
+@import '../../sass/breakpoints';
+
+.points{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   @include desktop {
+        flex-direction: row;
+        gap: 20px;
+        width: 70%;
+        margin: auto;
+        align-items: start;
+   }
+}

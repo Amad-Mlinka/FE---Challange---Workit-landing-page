@@ -1,17 +1,21 @@
-.footerContainer{
-    width: 100%;
+.footer{
+    padding-top: 300px;
     display: flex;
     flex-direction: column;
+    justify-items: center;
     align-items: center;
+    gap: 50px;
+    margin: 50px;
 
-    &>*{
-        margin-bottom: 40px;
+    .media{
+        & >*{
+            transition: filter 0.3s ease;
+            &:hover{
+                filter:brightness(10%)
+            }
+        }
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
     }
-}
-
-.media{
-    width: 45%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }

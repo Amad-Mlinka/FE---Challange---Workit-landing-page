@@ -1,0 +1,83 @@
+@import '../../../sass/breakpoints';
+.svg{
+    display: none;
+    &.left{
+        width: 300px;
+      }
+
+    &.right{
+        width: 220px;
+      }
+  }
+
+@include tablet{
+    .svg{
+        &.left{
+            position: absolute;
+            top: 0;
+            right: 84%;
+            display: block;
+          }
+    
+        &.right{
+            position: absolute;
+            top: 35%;
+            left: 88%;
+            display: block;
+          }
+      }
+}
+
+@include desktop{
+    .svg{
+        &.left{
+            position: absolute;
+            top: 0;
+            right: 90%;
+            display: block;
+          }
+    
+        &.right{
+            position: absolute;
+            top: 35%;
+            left: 94%;
+            display: block;
+          }
+      }
+}
+
+.heroContainer{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    margin: auto;
+    overflow: hidden;
+    height: 300px;
+    @include tablet{
+        height: 350px;
+    }
+}
+    
+.heroHeadingContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    @include tablet{
+        width: 50%;
+    }
+    @include desktop{
+        width: 30%;
+    }
+}
+     
+.heroHeading{
+    color: white;
+    text-align: center;
+}
+
